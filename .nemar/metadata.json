@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Ear-EEG Sleep Monitoring 2023 (EESM23)",
+  "description": "The Ear-EEG Sleep Monitoring 2023 (EESM23) dataset comprises nightly EEG recordings from 10 healthy participants collected during 2020-2022. The dataset includes polysomnography and ear-EEG measurements from the first two subjects, with subsequent recordings consisting of ear-EEG data alone. Each recording contains both a video task sequence performed prior to sleep and a sleep sequence recorded overnight in the subject's home environment, providing a resource for investigating ear-based EEG monitoring during sleep.",
+  "methods_description": "EEG data were collected using ear-EEG equipment, with the first two recordings including concurrent polysomnography (PSG) measurements. For the initial two subjects, recording equipment was mounted in the afternoon by researchers; for remaining subjects, equipment was self-mounted immediately before sleep. All recordings took place in subjects' home environments. Subjects marked key timepoints (recording start, electrode test start, bedtime, lights-out, recording end) using trigger buttons on the equipment.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,12 +21,29 @@
     "Marit Otto": {},
     "Preben Kidmose": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005178.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "ear-EEG"
+    },
+    {
+      "term": "sleep monitoring"
+    },
+    {
+      "term": "Polysomnography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
+    },
+    {
+      "term": "wearable biosensors"
+    },
+    {
+      "term": "sleep stages"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005178",
       "identifier_type": "URL",
@@ -39,15 +58,20 @@
       "identifier": "10.18112/openneuro.ds005178",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005178.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "95.1 GB (658 files)"
   ],
   "formats": [
     ".CSV",
@@ -67,35 +91,8 @@
     ".tsv",
     ".txt",
     ".xlsx",
-    ".xses"
+    ".xses",
+    ".yml"
   ],
-  "description": "The Ear-EEG Sleep Monitoring 2023 (EESM23) dataset comprises nightly electroencephalography recordings from 10 healthy participants collected during 2020-2022. The dataset includes polysomnography and ear-EEG measurements from initial recordings, with subsequent recordings consisting of ear-EEG data alone. Each recording session contains both a video task sequence and a subsequent sleep monitoring sequence, with all recordings conducted in participants' home environments.",
-  "methods_description": "EEG data were collected using ear-EEG equipment in EEGLAB .set format. The first two recordings included polysomnography (PSG) measurements alongside ear-EEG. For initial recordings, equipment was mounted by researchers in the afternoon; for subsequent recordings, participants self-mounted equipment prior to bedtime. Participants performed video tasks followed by overnight sleep monitoring, with manual event marking via trigger buttons to distinguish task and sleep sequences.",
-  "keywords": [
-    {
-      "term": "EEG",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "sleep monitoring",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018640"
-    },
-    {
-      "term": "ear-EEG"
-    },
-    {
-      "term": "Polysomnography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
-    },
-    {
-      "term": "wearable biosensors"
-    },
-    {
-      "term": "home-based monitoring"
-    }
-  ],
-  "source_hash": "37895c0444cea0494dfec69934c905ab1708bf0820898a83b9c6e25fd2dfc5a0"
+  "source_hash": "f440e8c638ebe8ed7cbad701a40a72d5bb3890269a40270259ee981555aa17a4"
 }
