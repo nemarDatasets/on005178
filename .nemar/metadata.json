@@ -1,0 +1,39 @@
+{
+  "version": "2.0",
+  "dataset_id": "on005178",
+  "source": "openneuro",
+  "source_id": "ds005178",
+  "title": "Ear-EEG Sleep Monitoring 2023 (EESM23)",
+  "authors": {
+    "Yousef Rezaei Tabar": {},
+    "Kaare Mikkelsen": {},
+    "Laura Birch": {},
+    "Nelly Shenton": {},
+    "Simon L Kappel": {},
+    "Astrid R Bertelsen": {},
+    "Reza Nikbakht": {},
+    "Hans O Toft": {},
+    "Chris H Henriksen": {},
+    "Martin C Hemmsen": {},
+    "Mike L Rank": {},
+    "Marit Otto": {},
+    "Preben Kidmose": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds005178.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.9.0",
+  "recording_modality": [
+    "eeg"
+  ],
+  "datatypes": [
+    "eeg"
+  ]
+}
