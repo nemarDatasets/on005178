@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005178",
-  "source": "openneuro",
-  "source_id": "ds005178",
+  "pipeline_stage": "enriched",
   "title": "Ear-EEG Sleep Monitoring 2023 (EESM23)",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Yousef Rezaei Tabar": {},
     "Kaare Mikkelsen": {},
@@ -19,21 +19,83 @@
     "Marit Otto": {},
     "Preben Kidmose": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005178.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005178",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005178",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005178",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.9.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".CSV",
+    ".Poly5",
+    ".csv",
+    ".docx",
+    ".edf",
+    ".gz",
+    ".json",
+    ".lnk",
+    ".m",
+    ".mat",
+    ".md",
+    ".mp4",
+    ".py",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".xlsx",
+    ".xses"
+  ],
+  "description": "The Ear-EEG Sleep Monitoring 2023 (EESM23) dataset comprises nightly electroencephalography recordings from 10 healthy participants collected during 2020-2022. The dataset includes polysomnography and ear-EEG measurements from initial recordings, with subsequent recordings consisting of ear-EEG data alone. Each recording session contains both a video task sequence and a subsequent sleep monitoring sequence, with all recordings conducted in participants' home environments.",
+  "methods_description": "EEG data were collected using ear-EEG equipment in EEGLAB .set format. The first two recordings included polysomnography (PSG) measurements alongside ear-EEG. For initial recordings, equipment was mounted by researchers in the afternoon; for subsequent recordings, participants self-mounted equipment prior to bedtime. Participants performed video tasks followed by overnight sleep monitoring, with manual event marking via trigger buttons to distinguish task and sleep sequences.",
+  "keywords": [
+    {
+      "term": "EEG",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "sleep monitoring",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018640"
+    },
+    {
+      "term": "ear-EEG"
+    },
+    {
+      "term": "Polysomnography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
+    },
+    {
+      "term": "wearable biosensors"
+    },
+    {
+      "term": "home-based monitoring"
+    }
+  ],
+  "source_hash": "37895c0444cea0494dfec69934c905ab1708bf0820898a83b9c6e25fd2dfc5a0"
 }
