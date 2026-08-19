@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Ear-EEG Sleep Monitoring 2023 (EESM23)",
-  "description": "The Ear-EEG Sleep Monitoring 2023 (EESM23) dataset comprises nightly EEG recordings from 10 healthy participants collected during 2020-2022. The dataset includes polysomnography and ear-EEG measurements from the first two subjects, with subsequent recordings consisting of ear-EEG data alone. Each recording contains both a video task sequence performed prior to sleep and a sleep sequence recorded overnight in the subject's home environment, providing a resource for investigating ear-based EEG monitoring during sleep.",
-  "methods_description": "EEG data were collected using ear-EEG equipment, with the first two recordings including concurrent polysomnography (PSG) measurements. For the initial two subjects, recording equipment was mounted in the afternoon by researchers; for remaining subjects, equipment was self-mounted immediately before sleep. All recordings took place in subjects' home environments. Subjects marked key timepoints (recording start, electrode test start, bedtime, lights-out, recording end) using trigger buttons on the equipment.",
+  "description": "This dataset comprises overnight ear-EEG recordings from 10 healthy participants, collected between 2020 and 2022 as part of a study on ear-EEG based sleep monitoring. The first two recordings include simultaneous polysomnography (PSG) and ear-EEG measurements, while subsequent nights consist solely of ear-EEG recordings performed at the subjects' homes. The dataset is intended to support development and validation of ear-EEG as a wearable alternative to traditional PSG for sleep staging and monitoring.",
+  "methods_description": "Recordings were made overnight at participants' homes using ear-EEG equipment, with the first two sessions also including polysomnography. Each recording session included a pre-sleep 'video' task followed by a 'sleep' task, with subjects manually marking events (e.g., bedtime, lights-out) using a trigger button. Data were converted to BIDS format using the EEGLAB '.set' file format.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -26,10 +26,9 @@
       "term": "EEG"
     },
     {
-      "term": "ear-EEG"
-    },
-    {
-      "term": "sleep monitoring"
+      "term": "Sleep",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
     },
     {
       "term": "Polysomnography",
@@ -37,20 +36,18 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
     },
     {
-      "term": "wearable biosensors"
+      "term": "ear-EEG"
     },
     {
-      "term": "sleep stages"
+      "term": "sleep monitoring"
+    },
+    {
+      "term": "wearable sensors"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005178",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005178",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -63,6 +60,11 @@
       "identifier": "10.18112/openneuro.ds005178.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005178",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
