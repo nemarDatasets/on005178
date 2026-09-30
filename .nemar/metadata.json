@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Ear-EEG Sleep Monitoring 2023 (EESM23)",
-  "description": "This dataset comprises overnight ear-EEG recordings from 10 healthy participants, collected between 2020 and 2022 as part of a study on ear-EEG based sleep monitoring. The first two recordings include simultaneous polysomnography (PSG) and ear-EEG measurements, while subsequent nights consist solely of ear-EEG recordings performed at the subjects' homes. The dataset is intended to support development and validation of ear-EEG as a wearable alternative to traditional PSG for sleep staging and monitoring.",
-  "methods_description": "Recordings were made overnight at participants' homes using ear-EEG equipment, with the first two sessions also including polysomnography. Each recording session included a pre-sleep 'video' task followed by a 'sleep' task, with subjects manually marking events (e.g., bedtime, lights-out) using a trigger button. Data were converted to BIDS format using the EEGLAB '.set' file format.",
+  "description": "The Ear-EEG Sleep Monitoring 2023 (EESM23) dataset contains overnight ear-EEG recordings from 10 healthy participants, collected at home between 2020 and 2022. The first two recordings per subject also include polysomnography (PSG), while the remaining recordings are ear-EEG only. Each recording consists of a pre-sleep video sequence followed by a sleep sequence, separated by subject-triggered markers.",
+  "methods_description": "Participants wore ear-EEG equipment during nightly recordings at home. For the first two recordings the equipment was mounted in the afternoon alongside PSG; for later recordings participants mounted the ear-EEG themselves just before bed. Participants kept diaries and used a trigger button to mark recording start, electrode test, bedtime, lights-out and recording end. Data are stored in EEGLAB .set format within a BIDS structure.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -26,9 +26,10 @@
       "term": "EEG"
     },
     {
-      "term": "Sleep",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
+      "term": "ear-EEG"
+    },
+    {
+      "term": "sleep monitoring"
     },
     {
       "term": "Polysomnography",
@@ -36,13 +37,12 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
     },
     {
-      "term": "ear-EEG"
+      "term": "Sleep",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
     },
     {
-      "term": "sleep monitoring"
-    },
-    {
-      "term": "wearable sensors"
+      "term": "home recording"
     }
   ],
   "related_identifiers": [
@@ -73,7 +73,7 @@
     "eeg"
   ],
   "sizes": [
-    "95.1 GB (658 files)"
+    "88.58 GB (658 files)"
   ],
   "formats": [
     ".CSV",
